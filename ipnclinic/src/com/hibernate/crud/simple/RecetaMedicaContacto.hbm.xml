@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate.crud.simple">
+
+    <class name="RecetaMedicaContacto" table="receta" lazy="true">
+        <id name="idreceta" column="idreceta" >
+            <generator class="native"/>
+        </id> 
+       <property name="idpaciente" type="int" column="idpaciente"/>
+        <property name="idcita" type="int" column="idcita" />
+        <property name="iddoc" type="int" column="iddoc" />
+        <property name="fecha_exp" type="string" column="fecha_exp"/>
+        <property name="desc_rec" type="string" column="desc_rec"/>
+        <property name="medicina" type="int" column="medicina" />
+    </class>
+
+</hibernate-mapping>

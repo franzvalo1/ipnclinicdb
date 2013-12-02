@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate.crud.simple">
+
+    <class name="StudentContact" table="student_contact" lazy="true">
+        <id name="student_id" column="iStudentID">
+            <generator class="native"/>
+        </id>
+		<property name="student_mobile_number" type="long" column="sMobile" />
+        <property name="student_email_id" type="string" column="sEmail"/>
+    </class>
+
+</hibernate-mapping>
